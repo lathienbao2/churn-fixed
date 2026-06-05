@@ -1,0 +1,174 @@
+{
+  "dataset_key": "telco_ibm",
+  "dataset": "Telco Customer Churn (IBM)",
+  "trained_at": "2026-06-05T07:01:18.617602",
+  "train_samples": 7032,
+  "baseline_churn_rate": 0.2658,
+  "feature_baseline": {
+    "tenure": {
+      "bins": [
+        1.0,
+        2.0,
+        6.0,
+        12.0,
+        20.0,
+        29.0,
+        40.0,
+        50.0,
+        60.80000000000018,
+        69.0,
+        72.0
+      ],
+      "mean": 32.421786120591584,
+      "std": 24.543514392682013
+    },
+    "MonthlyCharges": {
+      "bins": [
+        18.25,
+        20.05,
+        25.05,
+        45.9,
+        58.92,
+        70.35,
+        79.15,
+        85.53500000000004,
+        94.3,
+        102.64500000000004,
+        118.75
+      ],
+      "mean": 64.79820819112628,
+      "std": 30.083834589143024
+    },
+    "TotalCharges": {
+      "bins": [
+        18.8,
+        84.6,
+        267.07,
+        551.9950000000001,
+        944.1700000000001,
+        1397.475,
+        2048.9500000000003,
+        3141.1300000000015,
+        4475.41,
+        5976.640000000001,
+        8684.8
+      ],
+      "mean": 2283.3004408418656,
+      "std": 2266.6101807145346
+    }
+  },
+  "data_quality": {
+    "rows": 7032,
+    "columns": 53,
+    "null_rate": {
+      "customerID": 0.0,
+      "gender": 0.0,
+      "SeniorCitizen": 0.0,
+      "Partner": 0.0,
+      "Dependents": 0.0,
+      "tenure": 0.0,
+      "PhoneService": 0.0,
+      "MultipleLines": 0.0,
+      "InternetService": 0.0,
+      "OnlineSecurity": 0.0,
+      "OnlineBackup": 0.0,
+      "DeviceProtection": 0.0,
+      "TechSupport": 0.0,
+      "StreamingTV": 0.0,
+      "StreamingMovies": 0.0,
+      "Contract": 0.0,
+      "PaperlessBilling": 0.0,
+      "PaymentMethod": 0.0,
+      "MonthlyCharges": 0.0,
+      "TotalCharges": 0.0,
+      "Churn": 0.0,
+      "churn_rate": 0.0,
+      "Churn Score": 0.0,
+      "CLTV": 0.0,
+      "Churn Reason": 0.7342,
+      "Count": 0.0,
+      "Country": 0.0,
+      "State": 0.0,
+      "City": 0.0,
+      "Zip Code": 0.0,
+      "Lat Long": 0.0,
+      "Latitude": 0.0,
+      "Longitude": 0.0,
+      "Age": 0.0,
+      "Under 30": 0.0,
+      "Married": 0.0,
+      "Referred a Friend": 0.0,
+      "Number of Referrals": 0.0,
+      "Offer": 0.5502,
+      "Avg Monthly Long Distance Charges": 0.0,
+      "Avg Monthly GB Download": 0.0,
+      "Streaming Music": 0.0,
+      "Premium Tech Support": 0.0,
+      "Unlimited Data": 0.0,
+      "Total Refunds": 0.0,
+      "Total Extra Data Charges": 0.0,
+      "Total Long Distance Charges": 0.0,
+      "Total Revenue": 0.0,
+      "Satisfaction Score": 0.0,
+      "Customer Status": 0.0,
+      "Churn Score.1": 0.0,
+      "Churn Category": 0.0,
+      "AvgChargesPerTenure": 0.0
+    },
+    "class_distribution": {
+      "0": 5163,
+      "1": 1869
+    },
+    "outlier_warnings": []
+  },
+  "cv_auc_mean": 0.8414,
+  "cv_auc_std": 0.0037,
+  "cv_f1_mean": 0.6315,
+  "cv_f1_std": 0.0109,
+  "cv_accuracy_mean": 0.7733,
+  "test_accuracy": 0.7676,
+  "test_auc": 0.8299,
+  "test_precision": 0.5465,
+  "test_recall": 0.738,
+  "test_f1": 0.628,
+  "confusion_matrix": [
+    [
+      804,
+      229
+    ],
+    [
+      98,
+      276
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n   Ở lại (0)       0.89      0.78      0.83      1033\n  Rời đi (1)       0.55      0.74      0.63       374\n\n    accuracy                           0.77      1407\n   macro avg       0.72      0.76      0.73      1407\nweighted avg       0.80      0.77      0.78      1407\n",
+  "threshold_metrics": {
+    "0.30": {
+      "precision": 0.4535,
+      "recall": 0.861,
+      "f1": 0.5941
+    },
+    "0.40": {
+      "precision": 0.5017,
+      "recall": 0.7968,
+      "f1": 0.6157
+    },
+    "0.50": {
+      "precision": 0.5465,
+      "recall": 0.738,
+      "f1": 0.628
+    },
+    "0.60": {
+      "precision": 0.5782,
+      "recall": 0.6524,
+      "f1": 0.6131
+    },
+    "0.70": {
+      "precision": 0.6222,
+      "recall": 0.5241,
+      "f1": 0.5689
+    }
+  },
+  "train_size": 5625,
+  "test_size": 1407
+}

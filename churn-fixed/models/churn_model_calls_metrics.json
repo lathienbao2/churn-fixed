@@ -1,0 +1,241 @@
+{
+  "dataset_key": "call_details",
+  "dataset": "Call Details Churn (BigML)",
+  "trained_at": "2026-06-05T07:01:20.677329",
+  "train_samples": 3333,
+  "baseline_churn_rate": 0.1449,
+  "feature_baseline": {
+    "Account length": {
+      "bins": [
+        1.0,
+        50.0,
+        67.0,
+        80.0,
+        91.0,
+        101.0,
+        111.0,
+        122.0,
+        134.0,
+        152.0,
+        243.0
+      ],
+      "mean": 101.06480648064806,
+      "std": 39.81613156715945
+    },
+    "Total day minutes": {
+      "bins": [
+        0.0,
+        110.32000000000001,
+        134.74,
+        151.1,
+        165.68,
+        179.4,
+        194.0,
+        208.74,
+        224.76000000000005,
+        249.58,
+        350.8
+      ],
+      "mean": 179.77509750975094,
+      "std": 54.45921766392581
+    },
+    "Total eve minutes": {
+      "bins": [
+        0.0,
+        136.72,
+        158.94000000000003,
+        173.3,
+        188.0,
+        201.4,
+        213.44000000000005,
+        226.74,
+        244.4,
+        265.8,
+        363.7
+      ],
+      "mean": 200.98034803480348,
+      "std": 50.706236017633884
+    },
+    "Total night minutes": {
+      "bins": [
+        23.2,
+        136.34000000000003,
+        158.6,
+        174.0,
+        188.2,
+        201.2,
+        214.0,
+        227.54000000000002,
+        243.9,
+        264.2,
+        395.0
+      ],
+      "mean": 200.87203720372037,
+      "std": 50.566259608767766
+    },
+    "Total intl minutes": {
+      "bins": [
+        0.0,
+        6.7,
+        8.0,
+        8.9,
+        9.7,
+        10.3,
+        11.0,
+        11.7,
+        12.5,
+        13.7,
+        20.0
+      ],
+      "mean": 10.237293729372938,
+      "std": 2.791420699175182
+    },
+    "Number vmail messages": {
+      "bins": [
+        0.0,
+        25.0,
+        32.0,
+        51.0
+      ],
+      "mean": 8.099009900990099,
+      "std": 13.686311757838753
+    },
+    "Customer service calls": {
+      "bins": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        9.0
+      ],
+      "mean": 1.5628562856285628,
+      "std": 1.3152936866709521
+    }
+  },
+  "data_quality": {
+    "rows": 3333,
+    "columns": 22,
+    "null_rate": {
+      "Account length": 0.0,
+      "Number vmail messages": 0.0,
+      "Total day minutes": 0.0,
+      "Total eve minutes": 0.0,
+      "Total night minutes": 0.0,
+      "Total intl minutes": 0.0,
+      "Customer service calls": 0.0,
+      "Churn": 0.0,
+      "International plan": 0.0,
+      "Voice mail plan": 0.0,
+      "DayCalls": 0.0,
+      "DayCharge": 0.0,
+      "EveCalls": 0.0,
+      "EveCharge": 0.0,
+      "NightCalls": 0.0,
+      "NightCharge": 0.0,
+      "IntlCalls": 0.0,
+      "IntlCharge": 0.0,
+      "State": 0.0,
+      "AreaCode": 0.0,
+      "Phone": 0.0,
+      "Total domestic minutes": 0.0
+    },
+    "class_distribution": {
+      "0": 2850,
+      "1": 483
+    },
+    "outlier_warnings": [
+      {
+        "feature": "Account length",
+        "count": 18,
+        "lower": -5.5,
+        "upper": 206.5
+      },
+      {
+        "feature": "Total day minutes",
+        "count": 25,
+        "lower": 34.64999999999996,
+        "upper": 325.45000000000005
+      },
+      {
+        "feature": "Total eve minutes",
+        "count": 24,
+        "lower": 63.54999999999997,
+        "upper": 338.35
+      },
+      {
+        "feature": "Total night minutes",
+        "count": 30,
+        "lower": 64.54999999999998,
+        "upper": 337.75
+      },
+      {
+        "feature": "Total intl minutes",
+        "count": 46,
+        "lower": 3.1000000000000005,
+        "upper": 17.5
+      },
+      {
+        "feature": "Number vmail messages",
+        "count": 1,
+        "lower": -30.0,
+        "upper": 50.0
+      },
+      {
+        "feature": "Customer service calls",
+        "count": 267,
+        "lower": -0.5,
+        "upper": 3.5
+      }
+    ]
+  },
+  "cv_auc_mean": 0.9077,
+  "cv_auc_std": 0.0095,
+  "cv_f1_mean": 0.7424,
+  "cv_f1_std": 0.0272,
+  "cv_accuracy_mean": 0.9254,
+  "test_accuracy": 0.8981,
+  "test_auc": 0.8894,
+  "test_precision": 0.6526,
+  "test_recall": 0.6392,
+  "test_f1": 0.6458,
+  "confusion_matrix": [
+    [
+      537,
+      33
+    ],
+    [
+      35,
+      62
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n   Ở lại (0)       0.94      0.94      0.94       570\n  Rời đi (1)       0.65      0.64      0.65        97\n\n    accuracy                           0.90       667\n   macro avg       0.80      0.79      0.79       667\nweighted avg       0.90      0.90      0.90       667\n",
+  "threshold_metrics": {
+    "0.30": {
+      "precision": 0.4937,
+      "recall": 0.8041,
+      "f1": 0.6118
+    },
+    "0.40": {
+      "precision": 0.5827,
+      "recall": 0.7629,
+      "f1": 0.6607
+    },
+    "0.50": {
+      "precision": 0.6526,
+      "recall": 0.6392,
+      "f1": 0.6458
+    },
+    "0.60": {
+      "precision": 0.806,
+      "recall": 0.5567,
+      "f1": 0.6585
+    },
+    "0.70": {
+      "precision": 0.9412,
+      "recall": 0.4948,
+      "f1": 0.6486
+    }
+  },
+  "train_size": 2666,
+  "test_size": 667
+}
